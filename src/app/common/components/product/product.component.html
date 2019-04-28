@@ -1,0 +1,23 @@
+<div fxLayout.gt-md="row" fxLayout="column" class="font-color">
+  <div fxLayout="column" fxFlex.gt-md="15" class="thumbnail-style">
+    <a [routerLink]="" (click)="productClicked()">
+      <img src="{{product.thumbnailImage}}" />
+    </a>
+    <div style="color:black" fxFill>
+      Price: ${{product.msrp}}
+    </div>
+  </div>
+  <div fxLayout="column" fxFlex.gt-md class="description-style">
+    <div>
+      <a [routerLink]="" (click)="productClicked()">
+        {{product.name}}
+      </a>
+    </div>
+
+    <div style="font-size: 16px; color: black" [innerHTML]="product.shortDescription | safeHtml">
+    </div>
+  </div>
+  <!-- <div class="price-style">
+                Price: ${{product.msrp}}
+        </div> -->
+</div>

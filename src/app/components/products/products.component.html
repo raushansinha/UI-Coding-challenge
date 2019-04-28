@@ -1,0 +1,17 @@
+<section class="control-style">
+    <form fxLayout="row" fxLayoutAlign="center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <mat-form-field>
+            <input matInput type="text" placeholder="Search Text" ngModel name="searchText" required #searchText />
+            <mat-error>Search text must not be empty</mat-error>
+        </mat-form-field>
+        <button type="submit" mat-icon-button class="icon-style" [disabled]="f.invalid">
+            <mat-icon>search</mat-icon>
+        </button>
+    </form>
+
+    <div *ngFor="let product of products; let i = index;" style="margin-top:2px">
+        <!-- <div [ngClass]="(i % 2 == 0) ? 'product-even' : 'product-odd'"> -->
+            <product [product]="product"></product>
+        <!-- </div> -->
+    </div>
+</section>

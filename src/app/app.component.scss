@@ -1,0 +1,52 @@
+
+.main-header {
+    width: 68%;
+    margin: 0 auto;
+}
+
+table.headerTable tr {
+    display: flex !important;
+}
+
+table.headerTable {
+  
+  background-color: #007dc6;
+}
+
+.header-style {
+    background-color: #007dc6;
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: Bogle-Regular;
+    text-align: center;
+    padding:10px;
+}
+
+// .appheader {
+//     color: #FFFFFF;
+//     font-size: 24px;
+//     font-family: Bogle-Regular;
+//     width: 55%;
+//     text-align: center;
+// }
+
+// .logo-width {
+//     width: 20%;
+//     padding-left: 10%
+// }
+
+.site-wrap {
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+    background-color: #ffffff;
+}
+
+.shadow-bottom {
+    width: 75%;
+    height: 14px;
+    margin: 40px auto;
+    padding: 0px;
+    background: url('../assets/img/bg-footer-gradient.png') no-repeat center;
+}
